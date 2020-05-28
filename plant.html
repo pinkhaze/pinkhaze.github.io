@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <title>Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <a href="maintain.html">Maintain</a>
+            <a class="currentPlant" href="plant.html">Plant</a>
+            <a href="pick.html">Pick</a>
+            <a href="homepage.html">Home</a>
+        </div>
+    </header>
+    <!-- container for main content -->
+    <main>
+        <!-- header for "Plant" page-->
+        <div class="plant">
+            <h2>Planting Your Blueberry Bushes</h2>
+        </div>
+        <!-- unordered lists -->
+        <article>
+            <h3>Soil Details</h3>
+            <ul>
+                <li>Blueberries require a low soil pH (4.5-5.5) for bountiful production</li>
+                </br>
+                <li>Install a soil pH meter to consistently monitor the acidity of your soil</li>
+                </br>
+                <li>Although it is best to begin with already acidic soil by incorporating amendments like peat moss into your soil, you may need to use additional products to adjust the pH during plant growth</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Acidifying Soil</h3>
+            <ul>
+                <li>Hydroponic phosphoric acid solution rapidly acidifies soil and buffers pH, but requires frequent application</li>
+                </br>
+                <li>Elemental sulfur pellets lower soil pH, but require several weeks of treatment to become effective</li>
+                </br>
+                <li>Fortified sulfur solution rapidly acidifies soil and provides additional nutrients, but should be used sparingly</li>
+            </ul>
+        </article>
+
+        <!-- scroll box with external links -->
+        <aside>
+            <div class="scroll">
+                <h3>Suggested Resources</h3>
+                <p><a href="https://www.farmersalmanac.com/">Farmers' Almanac</a></p>
+
+                <p><a href="https://www.blueberrycouncil.org/">Blueberry Council</a></p>
+
+                <p><a href="https://planthardiness.ars.usda.gov/PHZMWeb/">USDA Plant Hardiness Zone Map</a></p>
+
+                <p><a href="https://extension.umn.edu/fruit/growing-blueberries-home-garden#staking-and-support-19061/">University of Minnesota Extension</a></p>
+
+                <p><a href="https://extension.oregonstate.edu/gardening/berries-fruit/what-good-soil-mix-blueberries/">OSU Extension Service</a></p>
+            </div>
+            <div class="clickLink">
+                <p>Click on the links to get more info!</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- container for email subscription form -->
+    <section id="subscribe">
+        <h1>Subscribe to our Monthly Newsletter for Helpful Tips</h1>
+        <form method="POST" action="http://httpbin.org/post">
+            <input type="email" placeholder="Enter Your Email Here">
+            <button type="submit" class="subscribeButton">Subscribe</button>
+        </form>
+    </section>
+
+    <!---->
+    <footer>
+        <p>Copyright &copy; 2020</p>
+    </footer>
+</body>
+
+</html>

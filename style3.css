@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: "Oxygen", sans-serif;
+    background-color: #f2f2f2;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 80px;
+}
+
+
+/* styling for navigation bar */
+
+.navigation {
+    background: #68829E;
+    color: #f2f2f2;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* styling for navigation links */
+
+.navigation a {
+    float: right;
+    padding: 33px;
+    text-align: center;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+/* indicate which subpage a user is on by highlighting the background */
+
+.navigation a:hover {
+    background-color: #ddd;
+    transition-duration: 0.10s;
+}
+
+.currentMaintain {
+    background-color: #AEBD38;
+}
+
+.currentPlant {
+    background-color: #AEBD38;
+}
+
+.currentPick {
+    background-color: #AEBD38;
+}
+
+.currentHome {
+    background-color: #AEBD38
+}
+
+
+/* sytle for subscribe container */
+
+#subscribe {
+    padding: 15px;
+    color: #f2f2f2;
+    background: rgb(104, 130, 158);
+    height: 95px;
+}
+
+
+/* header for subscribe section */
+
+#subscribe h1 {
+    float: left;
+    letter-spacing: 2px;
+}
+
+#subscribe form {
+    float: right;
+    margin-top: 15px;
+}
+
+
+/* styling for white email intput box */
+
+#subscribe input[type="email"] {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    padding: 4px;
+    height: 39px;
+    width: 400px;
+}
+
+
+/* styling for subscribe button */
+
+.subscribeButton {
+    height: 41px;
+    background: #AEBD38;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* highlight download button when mouse is over it */
+
+.subscribeButton:hover {
+    background-color: #598234;
+}
+
+
+/* styling for footer */
+
+footer {
+    color: #f2f2f2;
+    background-color: #35424a;
+    font-size: 12px;
+    text-align: center;
+    padding: 1px;
+    height: 40px;
+    font-size: 12px;
+}
+
+main {
+    max-width: 1505px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
+}
+
+
+/* :after selectro from https://www.w3schools.com/cssref/sel_after.asp*/
+
+
+/* insert space */
+
+main:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+article,
+aside {
+    margin-bottom: 0%;
+    border-radius: 1px;
+    border-radius: 5px;
+}
+
+
+/* header for "Plant" page */
+
+.plant {
+    background-color: #598234;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* styling for two main content boxes */
+
+article {
+    width: 65%;
+    float: left;
+    padding: 25px;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+    background-color: #35424a;
+}
+
+
+/* header for sidebar */
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* styling for list items */
+
+li {
+    font-size: 15px;
+    list-style: none;
+}
+
+
+/* sytling for sidebar */
+
+aside {
+    width: 33%;
+    float: right;
+    margin-top: -165px;
+    margin-right: 10px;
+    padding: 35px;
+    color: #f2f2f2;
+    background-color: #35424a;
+    letter-spacing: 1px;
+}
+
+
+/* styling for scroll box */
+
+.scroll {
+    font-size: 20px;
+    background: #35424a;
+    color: #f2f2f2;
+    width: 478px;
+    height: 200px;
+    padding: 10px;
+    overflow: auto;
+}
+
+
+/* styling for links in scroll box */
+
+a {
+    color: #f2f2f2;
+    font-size: 15px;
+}
