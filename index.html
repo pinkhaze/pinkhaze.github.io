@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+
+    <title>Website</title>
+
+</head>
+
+<body>
+    <!--Horizontal navigation menu-->
+    <!-- source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky -->
+    <header>
+        <div class="navigation">
+            <a href="maintain.html">Maintain</a>
+            <a href="plant.html">Plant</a>
+            <a href="pick.html">Pick</a>
+            <a class="currentHome" href="index.html">Home</a>
+        </div>
+    </header>
+    <!-- create boxes of varying sizes for content 
+      source: https://dev.to/ltephanysopez/css-grid-the-basics-4ppp -->
+    <div class="container">
+        <div class="box one">
+            <!-- carousel animation -->
+            <!-- sources: https://stackoverflow.com/questions/43961189/automatic-slideshow-with-button
+            https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9
+            https://www.youtube.com/watch?v=wQcR25IyPBQ 
+            https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+            <div class="carousel-box">
+                <div class="slides fade"><img src="images/bb1.jpg" style="width:100%">Photo Credit:<a href="http://en.wikipedia.org/wiki/Blueberry">Wikipedia</a></p>
+                </div>
+                <div class="slides fade"><img src="images/bb2.jpg" style="width:100%">Photo Credit:<a href="http://gardenerspath.com/plants/fruit/best-blueberry-varieties/">Gardener's Path</a></p>
+                </div>
+                <div class="slides fade"><img src="images/bb3.jpg" style="width:100%">Photo Credit:<a href="http://www.birdbgone.com/blog/blueberry-bush-netting-to-the-rescue/">Bird B Gone</a></p>
+                </div>
+                <a class="left" onclick="nextSlide(-1)">&#171;</a>
+                <a class="right" onclick="nextSlide(1)">&#187;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="activeSlide(1)"></span>
+                <span class="dot" onclick="activeSlide(2)"></span>
+                <span class="dot" onclick="activeSlide(3)"></span>
+            </div>
+
+        </div>
+
+        <div class="box two">
+            <p class="text"><br>Why</p>
+            <p class="text">Grow</p>
+            <p class="text">Blueberry</p>
+            <p class="text">Bushes?</p>
+        </div>
+        <div class="box three"><br>Good<br>Source<br>of<br>Vitamins<br>C and K1</div>
+        <div class="box four"><br><br>Full<br>of<br>Antioxidants</div>
+        <div class="box five"><br><br>High<br>Dietary<br>Fiber<br>Content</div>
+    </div>
+
+    <!-- container for email subscription form -->
+    <section id="subscribe">
+        <h1>Subscribe to our Monthly Newsletter for Helpful Tips</h1>
+        <form method="POST" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php">
+            <input type="email" placeholder="Enter Your Email Here">
+            <button type="submit" class="subscribeButton">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2020</p>
+    </footer>
+
+    <script src="homepage.js"></script>
+</body>
+
+</html>

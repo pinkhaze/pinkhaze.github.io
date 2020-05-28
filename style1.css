@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: "Oxygen", sans-serif;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #68829E;
+    color: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 80px;
+}
+
+
+/* styling for navigation bar */
+
+.navigation {
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #68829E;
+    color: #f2f2f2;
+    width: 100%;
+}
+
+
+/* styling for navigation links */
+
+.navigation a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 33px;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+/* indicate which link the mouse is hovering over */
+
+
+/* hover indicator from https://www.w3schools.com/cssref/sel_hover.asp */
+
+.navigation a:hover {
+    background-color: #f2f2f2;
+    transition-duration: 0.10s;
+}
+
+
+/* indicate which subpage a user is on by highlighting the background */
+
+.currentMaintain {
+    background-color: #AEBD38;
+}
+
+.currentPlant {
+    background-color: #AEBD38;
+}
+
+.currentPick {
+    background-color: #AEBD38;
+}
+
+.currentHome {
+    background-color: #AEBD38;
+}
+
+
+/* styling for subscription container */
+
+#subscribe {
+    padding: 15px;
+    color: #f2f2f2;
+    background: #68829E;
+    height: 95px;
+}
+
+#subscribe h1 {
+    float: left;
+    margin-left: 2px;
+}
+
+
+/* header for subscription */
+
+#subscribe form {
+    float: right;
+    margin-top: 15px;
+}
+
+#subscribe input[type="email"] {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    padding: 4px;
+    height: 39px;
+    width: 400px;
+}
+
+
+/* subscribe button styling */
+
+.subscribeButton {
+    height: 41px;
+    background: #AEBD38;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* highlight download button when mouse is over it */
+
+.subscribeButton:hover {
+    background-color: #598234;
+}
+
+
+/* footer styling */
+
+footer {
+    color: #f2f2f2;
+    background-color: #35424a;
+    text-align: center;
+    padding: 1px;
+    height: 40px;
+    font-size: 12px;
+}
+
+
+/* make different sized boxes based on a grid */
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 260px 260px 260px 692px;
+    grid-template-rows: 400px 380px;
+    background-color: #f2f2f2;
+    color: #35424a;
+    margin-top: 40px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+
+/* styling for boxes in general */
+
+.box {
+    background-color: #35424a;
+    color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+
+/* individual styling for boxes */
+
+
+/* grid layout */
+
+.one {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    border: solid 5px #598234;
+}
+
+.two {
+    grid-column: 4;
+    grid-row: 1 / 4;
+    margin-bottom: 9px;
+    border: solid 7px #598234;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2;
+    border: solid 7px #598234;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 95%;
+}
+
+.four {
+    grid-column: 2;
+    grid-row: 2;
+    border: solid 7px #598234;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 95%;
+}
+
+.five {
+    grid-column: 3;
+    grid-row: 2;
+    border: solid 7px #598234;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 95%;
+}
+
+p .text {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 65px;
+}
+
+.slides {
+    display: none;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+}
+
+
+/* set height of slides */
+
+img {
+    height: 335px;
+}
+
+.carousel-box {
+    width: 545px;
+    position: relative;
+    margin-left: 85px;
+    margin-top: -20px;
+    border: solid 2px #f2f2f2;
+}
+
+
+/* stylize and position right and left buttons */
+
+.left,
+.right {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    margin-top: -22px;
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 60px;
+    cursor: default;
+}
+
+
+/* move right button to the right side */
+
+.right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* stylize and position indicator dots */
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #AEBD38;
+    border: solid 2px #f2f2f2;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.current,
+.dot:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* Additional Works Cited
+cursor property at https://www.w3schools.com/cssref/pr_class_cursor.asp
